@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>To-Do List</title>
+		<link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<h1 id="headline" class="cssanimation leFadeInTop sequence">To-Do List</h1>
+				<div class="group">
+					<label for="main">Your task</label>
+					<input type="text" id="main" class="input-main" />
+					<button id="btn-main">Add Task</button>
+				</div>
+			</header>
+
+			<button class="btn-toggle"><strong class="cssanimation leFadeInTop sequence">Toggle List</strong></button>
+
+			<div class="list-container">
+				<ul>
+					<li>Red Bull..</li>
+					<li>Check Emails..</li>
+					<li>Code Practice..</li>
+					<li>Create Something cool..</li>
+				</ul>
+				<button class="btn-remove">Remove Last Task</button>
+			</div>
+		</div>
+
+		<script src="app.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.min.js"></script>
+	</body>
+</html>
