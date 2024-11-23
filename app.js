@@ -50,3 +50,25 @@ function attachRemoveButton(li) {
 for (let i = 0; i < listItems.length; i += 1) {
 	attachRemoveButton(listItems[i]);
 }
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const toggleInput = document.querySelector(".toggle-input");
+
+    // Check if dark mode was previously enabled
+    if (localStorage.getItem("dark-mode") === "enabled") {
+        document.body.classList.add("dark-mode");
+        toggleInput.checked = true; // Update toggle's state
+    }
+
+    // Add event listener to toggle input
+    toggleInput.addEventListener("change", () => {
+        if (toggleInput.checked) {
+            document.body.classList.add("dark-mode");
+            localStorage.setItem("dark-mode", "enabled"); // Save preference
+        } else {
+            document.body.classList.remove("dark-mode");
+            localStorage.setItem("dark-mode", "disabled"); // Save preference
+        }
+    });
+});
