@@ -159,6 +159,9 @@ li button:hover {
   .input-main {
     width: 50%;
   }
+  .toggle {
+    left: 25%;
+  }
 }
 
 
@@ -168,10 +171,11 @@ $knob-size: 1.75em;
 
 .toggle {
   display: flex;
+  rotate: 90deg;
   justify-content: center;
   position: absolute;
-  top: 40px;
-  left: 25%;
+  top: 55px;
+  right: 10%;
 
 }
 
@@ -307,13 +311,13 @@ $knob-size: 1.75em;
     border-radius: inherit;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to bottom, #5ab054, #438c3c);
+    
     box-shadow: inherit;
     opacity: 0;
     transition: opacity .24s cubic-bezier(.65, 1.35, .5, 1);
     
     @at-root .toggle-input:checked ~ .toggle-base & {
-      opacity: 1;
+      opacity: 0;
     }
   }
 }
