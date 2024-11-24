@@ -33,6 +33,7 @@ btnCreate.addEventListener("click", () => {
 	ul.appendChild(li);
 	attachRemoveButton(li);
 	input.value = "";
+	localStorage.setItem(input.value);
 });
 
 btnRemove.addEventListener("click", () => {
